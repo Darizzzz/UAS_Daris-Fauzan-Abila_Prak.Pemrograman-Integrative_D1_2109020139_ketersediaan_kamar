@@ -1,0 +1,21 @@
+di postmannya
+
+cek kamar yang kosong
+http://localhost:8000/api/rooms/available
+Endpoint: GET /api/rooms/available
+
+
+
+pasient cek in
+http://localhost:8000/api/reservations/checkin/1
+Endpoint: POST /api/reservations/checkin/{roomId}
+
+setting body, raw, json. isi sebagai berikut, sesuai database
+{
+    "patient_id": 1
+}
+
+
+pasient cek out
+http://localhost:8000/api/reservations/checkout/104
+POST /api/reservations/checkout/{reservationId}
